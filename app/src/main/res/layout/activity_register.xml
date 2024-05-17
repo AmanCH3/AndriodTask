@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="72dp"
+        android:text="Register Screen"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/signName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Full name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/signEmail"
+        app:layout_constraintEnd_toEndOf="@+id/signEmail"
+        app:layout_constraintStart_toStartOf="@+id/signEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/signPassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/confirmPassword"
+        app:layout_constraintEnd_toEndOf="@+id/signName"
+        app:layout_constraintStart_toStartOf="@+id/confirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/signEmail" />
+
+    <EditText
+        android:id="@+id/signEmail"
+        android:layout_width="304dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Email "
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/signPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signName" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/genderSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/genderSpinner"
+        app:layout_constraintStart_toStartOf="@+id/genderSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/signPassword" />
+
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_width="293dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/termsCheckup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPassword" />
+
+    <CheckBox
+        android:id="@+id/termsCheckup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="34dp"
+        android:text="I accept to terms and condition"
+        app:layout_constraintBottom_toTopOf="@+id/signUpButton"
+        app:layout_constraintEnd_toEndOf="@+id/signUpButton"
+        app:layout_constraintStart_toStartOf="@+id/genderSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/genderSpinner" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="233dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="127dp"
+        android:backgroundTint="#77aaff"
+        android:text="Sign Up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termsCheckup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
