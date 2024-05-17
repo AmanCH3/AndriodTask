@@ -14,16 +14,16 @@
         android:layout_marginStart="138dp"
         android:layout_marginTop="72dp"
         android:layout_marginBottom="119dp"
-        android:textSize="25dp"
         android:text="Login Screen"
+        android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/editEmail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editEmail"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="378dp"
+        android:layout_height="54dp"
         android:layout_marginTop="210dp"
         android:layout_marginBottom="304dp"
         android:ems="10"
@@ -38,34 +38,37 @@
 
     <EditText
         android:id="@+id/editPassword"
-        android:layout_width="317dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="30dp"
+        android:layout_width="380dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="19dp"
         android:layout_marginBottom="362dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/editEmail"
+        app:layout_constraintVertical_bias="0.513" />
 
     <CheckBox
         android:id="@+id/rememberMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="413dp"
-        android:layout_marginBottom="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="254dp"
         android:text="Remember Me"
-        app:layout_constraintBottom_toTopOf="@+id/Login"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
 
     <Button
         android:id="@+id/Login"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="329dp"
+        android:layout_height="47dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="177dp"
@@ -73,9 +76,10 @@
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/editPassword"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="@+id/editPassword"
-        app:layout_constraintTop_toBottomOf="@+id/rememberMe" />
+        app:layout_constraintTop_toBottomOf="@+id/rememberMe"
+        app:layout_constraintVertical_bias="0.672" />
 
     <TextView
         android:id="@+id/signUp"
@@ -83,8 +87,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="46dp"
         android:layout_marginBottom="133dp"
-        android:text="Don't have account ? Sign up"
         android:clickable="true"
+        android:text="Don't have account ? Sign up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editEmail" />
