@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "93913255532",
+    "firebase_url": "https://bike-service-d4194-default-rtdb.firebaseio.com",
+    "project_id": "bike-service-d4194",
+    "storage_bucket": "bike-service-d4194.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93913255532:android:beebfbfbd44a6e71d8d249",
+        "android_client_info": {
+          "package_name": "com.example.debugbikeservice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm7S4zO0ikPLk1grSpOB1sW_iwPXAoVpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

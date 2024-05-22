@@ -13,12 +13,27 @@
         android:theme="@style/Theme.DebugBikeService"
         tools:targetApi="31">
         <activity
-            android:name=".DashActivity"
+            android:name=".MulActivity"
             android:exported="false" />
         <activity
-            android:name=".Fragment.BottonNavigationActivity"
-            android:exported="false"
-            android:label="@string/title_activity_botton_navigation" />
+            android:name=".SubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DashActivity"
+            android:exported="false" />
+
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />

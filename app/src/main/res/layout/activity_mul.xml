@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MulActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mulbottomFrame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtopFrame">
+
+        <TextView
+            android:id="@+id/mulQuestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="150dp"
+            android:gravity="center"
+            android:text="Questions"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/operand1"
+            android:layout_width="16dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="36dp"
+            android:text="a"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mulQuestions" />
+
+        <TextView
+            android:id="@+id/multiplication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="32dp"
+            android:text="*"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/operand2"
+            app:layout_constraintStart_toEndOf="@+id/operand1"
+            tools:layout_editor_absoluteY="81dp" />
+
+        <TextView
+            android:id="@+id/operand2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="164dp"
+            android:text="b"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mulQuestions" />
+
+        <EditText
+            android:id="@+id/showScoremul"
+            android:layout_width="294dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="59dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Score"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/operand2" />
+
+        <Button
+            android:id="@+id/checkButtonmul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="80dp"
+            android:text="Check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/showScoremul" />
+
+        <Button
+            android:id="@+id/nextButtonmul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="83dp"
+            android:layout_marginEnd="76dp"
+            android:text="Next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/checkButtonmul"
+            app:layout_constraintTop_toBottomOf="@+id/showScoremul" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/subtopFrame"
+        android:layout_width="411dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toTopOf="@+id/mulbottomFrame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="11dp"
+            android:text="Score : "
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="85dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="8dp"
+            android:text="Life : "
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/lifeSpan"
+            app:layout_constraintEnd_toStartOf="@+id/lifeSpan"
+            app:layout_constraintStart_toEndOf="@+id/number" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="35dp"
+            android:text="0"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintStart_toEndOf="@+id/score"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lifeSpan"
+            android:layout_width="16dp"
+            android:layout_height="39dp"
+            android:layout_marginEnd="66dp"
+            android:text="3"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/timer"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.553" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="86dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="8dp"
+            android:text="Timer"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lifeSpan"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
